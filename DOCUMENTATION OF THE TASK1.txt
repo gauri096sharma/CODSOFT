@@ -1,0 +1,48 @@
+DOCUMENTATION OF THE TASK1:
+Import Statements:
+
+The code imports necessary libraries: random for randomization and tkinter for creating the graphical user interface (GUI) components.
+messagebox is imported from tkinter for displaying message boxes.
+Class QuizGameGUI:
+
+This class represents the main GUI window for the quiz game.
+Constructor __init__:
+
+Initializes the GUI components and sets up the initial state of the game.
+self.questions: A list of dictionaries, each representing a question, its choices, and the correct answer.
+self.score: Holds the user's score.
+self.current_question_idx: Keeps track of the index of the current question being displayed.
+GUI Components Setup:
+
+Labels, buttons, and feedback components are created using Tkinter widgets.
+Questions are displayed using a label widget.
+Choice buttons are created using a loop, and their labels are populated with choices from the current question.
+Feedback label displays correctness feedback.
+"Next Question" button allows users to proceed to the next question.
+load_question Method:
+
+Takes an index as input and loads the corresponding question and its choices into the GUI components.
+Updates the text of the question label and choice buttons.
+check_answer Method:
+
+Takes the index of the selected choice as input and compares it to the correct answer for the current question.
+Updates the score and provides feedback on the correctness of the answer.
+show_feedback Method:
+
+Displays feedback on the user's answer, indicating whether it was correct or incorrect.
+Enables the "Next Question" button for the user to proceed.
+next_question Method:
+
+Advances to the next question in the sequence if available.
+If all questions have been answered, calls the display_final_results method.
+display_final_results Method:
+
+Shows a message box with the user's final score at the end of the quiz.
+main Function:
+
+Creates the main GUI window using Tkinter and an instance of the QuizGameGUI class.
+Enters the main event loop with root.mainloop() to start the GUI interaction.
+if __name__ == "__main__": Block:
+
+Calls the main function if the script is run directly, ensuring that the quiz game starts when the script is executed.
+Overall, this code creates a basic quiz game where users can answer questions and receive immediate feedback on their answers. It demonstrates the use of Tkinter for creating a graphical user interface and handling user interactions.

@@ -1,0 +1,38 @@
+DOCUMENTATION OF TASK-2 (SIMPLE CALCULATOR):
+
+Import Statements:
+
+The code imports the tkinter library for creating the graphical user interface (GUI) components.
+messagebox is imported from tkinter for displaying error messages.
+Arithmetic Operation Functions:
+
+Four functions, add, subtract, multiply, and divide, are defined.
+Each function tries to perform the corresponding arithmetic operation using the values entered by the user in the entry fields.
+If the input is invalid (not a valid number), a ValueError is caught, and an error message is shown using a messagebox.
+GUI Components Setup:
+
+The GUI components include labels, entry fields, buttons for each arithmetic operation, and a label to display the result.
+Labels and entry fields are used to input the two numbers for calculations.
+Buttons are created for each arithmetic operation, and their corresponding functions are assigned as the command.
+A StringVar variable named result is used to display the result of calculations.
+Main GUI Window Setup:
+
+The main GUI window is created using tk.Tk().
+The window title is set to "Simple Calculator".
+Label Widgets:
+
+Two labels are created to prompt the user to input the first and second numbers.
+Entry Widgets:
+
+Two entry fields are provided for the user to enter the two numbers.
+Arithmetic Operation Buttons:
+
+Buttons for addition, subtraction, multiplication, and division are created, and their corresponding functions are assigned as the command.
+Result Display Label:
+
+A label widget is created to display the result of calculations.
+The textvariable attribute is set to the result variable, which will update dynamically based on the result of operations.
+Event Loop:
+
+The main event loop is started using root.mainloop(), allowing user interaction with the GUI components.
+Overall, this code creates a simple calculator GUI application using Tkinter. Users can input two numbers, choose an arithmetic operation, and see the result displayed on the GUI. The code demonstrates the basic principles of creating a graphical user interface and handling user interactions using Tkinter in Python.
